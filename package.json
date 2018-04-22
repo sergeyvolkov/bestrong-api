@@ -3,8 +3,17 @@
   "version": "0.0.1",
   "description": "BeStrong API - food&activity tracker",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "pretest": "eslint --ignore-path .gitignore lib"
+  },
   "keywords": [],
   "author": "Sergii Volkov <vlkv.dev@icloud.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1"
+  }
 }
