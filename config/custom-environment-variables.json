@@ -7,5 +7,8 @@
       "password": "POSTGRES_PASSWORD",
       "database": "POSTGRES_DATABASE"
     }
+  },
+  "swagger": {
+    "enabled": "SWAGGER_ENABLED"
   }
 }
