@@ -2,8 +2,10 @@
   "name": "api",
   "version": "0.0.1",
   "description": "BeStrong API - food&activity tracker",
-  "main": "",
+  "main": "lib/index.js",
   "scripts": {
+    "start": "node lib/index.js",
+    "start:docker": "docker-compose -f docker-compose.yml up --build --force-recreate --abort-on-container-exit",
     "pretest": "eslint --ignore-path .gitignore lib"
   },
   "keywords": [],

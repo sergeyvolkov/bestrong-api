@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  api_postgres:
+    image: postgres:latest
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: local
+      POSTGRES_USER: local
+      POSTGRES_PASSWORD: local
+
+  api_app:
+    image: node:carbon
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api_postgres
+    environment:
+      PORT: 3000
+      DB_HOST: api_postgres
+      DB_PORT: 5432
+      DB_NAME: local
+      DB_USER: local
+      DB_PASSWORD: local
+
+volumes:
+  pg_data:
+    driver: local
