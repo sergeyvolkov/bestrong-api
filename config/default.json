@@ -10,5 +10,8 @@
   },
   "swagger": {
     "enabled": "1"
+  },
+  "jwt": {
+    "secretKey": "YOUR RSA PRIVATE KEY HERE"
   }
 }
