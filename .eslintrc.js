@@ -10,8 +10,8 @@ module.exports = {
   rules: {
     indent: ['error', 2],
     'comma-dangle': ['error', {
-      arrays: 'always',
-      objects: 'always',
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
     }],
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],

@@ -7,5 +7,12 @@
       "password": "POSTGRES_PASSWORD",
       "database": "POSTGRES_DATABASE"
     }
+  },
+  "swagger": {
+    "enabled": "SWAGGER_ENABLED"
+  },
+  "jwt": {
+    "publicKey": "JWT_PUBLIC_KEY",
+    "secretKey": "JWT_SECRET_KEY"
   }
 }

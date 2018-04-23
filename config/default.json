@@ -7,5 +7,12 @@
       "password": "local",
       "database": "local"
     }
+  },
+  "swagger": {
+    "enabled": "1"
+  },
+  "jwt": {
+    "publicKey": "YOUR RSA PUBLIC KEY HERE",
+    "secretKey": "YOUR RSA PRIVATE KEY HERE"
   }
 }

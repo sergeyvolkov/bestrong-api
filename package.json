@@ -19,12 +19,21 @@
     "eslint-plugin-node": "^6.0.1"
   },
   "dependencies": {
+    "boom": "^7.2.0",
     "config": "^1.30.0",
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
     "hapi": "^17.3.1",
+    "hapi-auth-jwt2": "^8.1.0",
+    "hapi-swagger": "^9.1.1",
+    "inert": "^5.1.0",
     "joi": "^13.2.0",
+    "jsonwebtoken": "^8.2.1",
     "knex": "^0.14.6",
     "objection": "^1.1.7",
     "pg": "^7.4.1",
-    "schwifty": "^4.0.0"
+    "schwifty": "^4.0.0",
+    "uuid62": "^1.0.0",
+    "vision": "^5.3.2"
   }
 }
