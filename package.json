@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "bestrong-api",
   "version": "0.0.1",
   "description": "BeStrong API - food&activity tracker",
   "main": "lib/index.js",
