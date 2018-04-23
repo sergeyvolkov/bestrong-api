@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node lib/index.js",
     "start:docker": "docker-compose -f docker-compose.yml up --build --force-recreate --abort-on-container-exit",
-    "pretest": "eslint --ignore-path .gitignore lib"
+    "eslint": "eslint --ignore-path .gitignore lib",
+    "precommit": "npm run eslint"
   },
   "keywords": [],
   "author": "Sergii Volkov <vlkv.dev@icloud.com>",
@@ -16,7 +17,8 @@
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-plugin-node": "^6.0.1"
+    "eslint-plugin-node": "^6.0.1",
+    "husky": "^0.14.3"
   },
   "dependencies": {
     "boom": "^7.2.0",
