@@ -1,0 +1,19 @@
+{
+  "db": {
+    "postgres": {
+      "host": "localhost",
+      "port": "5432",
+      "user": "local",
+      "password": "local",
+      "database": "local"
+    }
+  },
+  "swagger": {
+    "enabled": "1"
+  },
+  "jwt": {
+    "publicKey": "YOUR RSA PUBLIC KEY HERE",
+    "refreshKey": "YOUR REFRESH KEY HERE",
+    "secretKey": "YOUR RSA PRIVATE KEY HERE"
+  }
+}
