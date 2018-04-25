@@ -6,7 +6,8 @@
       "user": "POSTGRES_USER",
       "password": "POSTGRES_PASSWORD",
       "database": "POSTGRES_DATABASE"
-    }
+    },
+    "runSeeds": "RUN_SEEDS"
   },
   "swagger": {
     "enabled": "SWAGGER_ENABLED"
