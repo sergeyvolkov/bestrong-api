@@ -16,5 +16,5 @@ For enabling Swagger UI set `SWAGGER_ENABLED=1` env variable and follow `http://
 
 ### Features list
 - Weight tracker
-- (WIP) Food tracker
+- Food tracker
 - (WIP) Physical activity tracker
