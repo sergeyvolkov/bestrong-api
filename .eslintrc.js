@@ -6,17 +6,21 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
-  extends: 'eslint:recommended',
+  plugins: ['node'],
+  extends: ['eslint:recommended', 'plugin:node/recommended'],
   rules: {
-    indent: ['error', 2],
+    'arrow-parens': ["error", "as-needed"],
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
     }],
+    indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
+    'node/exports-style': ['error', 'module.exports'],
+    'object-curly-spacing': ['error', 'always'],
     semi: ['error', 'always'],
     strict: ['error', 'global'],
-    'object-curly-spacing': ['error', 'always'],
+    quotes: ['error', 'single'],
+
   },
 };
